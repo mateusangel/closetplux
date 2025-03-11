@@ -16,19 +16,17 @@ body {
 
 /* Logo */
 .logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+
     width: 10rem;
     transition: width 0.3s ease;
-    z-index: 10;
+    animation: fadeIn 2s ease-out forwards;
+ 
 }
 
 /* Banner */
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background: url('../../public/back.jpg') no-repeat center center; /* Imagem de fundo */
@@ -74,6 +72,7 @@ body {
 }
 
 .cta-btn {
+    margin-top: 4rem;
     background-color: white;
     color: #000000;
     font-weight: bolder;
@@ -306,6 +305,7 @@ footer a {
     .cta-btn {
         font-size: 1rem;
         padding: 10px 20px;
+        
     }
 
     .logo {
