@@ -210,8 +210,7 @@ footer a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
-    
+        
 }
 
 
@@ -243,7 +242,7 @@ footer a {
     }
     /* Banner */
     .hero {
-        height: 50vh !important;
+        height: 60vh !important;
         padding: 20px 10px;
     }
 
@@ -319,6 +318,7 @@ footer a {
 @media (max-width: 480px) {
     .hero {
         height: 90vh;
+       
     }
 
     .hero h1 {
