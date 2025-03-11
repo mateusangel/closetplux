@@ -206,6 +206,15 @@ footer a {
 
 @media (max-width: 768px) {
 
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+
+
 .categories {
     margin-top: 2rem;
     font-size: .7rem;
@@ -271,6 +280,9 @@ footer a {
 }
 
 @media (max-width: 680px) {
+
+
+
     .hero {
         height: 50vh;
     }
@@ -306,7 +318,7 @@ footer a {
 
 @media (max-width: 480px) {
     .hero {
-        height: 50vh;
+        height: 90vh;
     }
 
     .hero h1 {
@@ -323,6 +335,8 @@ footer a {
         padding: 10px 20px;
         
     }
+
+ 
 
     .logo {
         width: 4rem;
