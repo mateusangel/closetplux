@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/Log.png" type="image/x-icon">
+    <!-- Adicionando a fonte The Seasons do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+    <title>Closetplux</title>
+    <!-- Vinculando o arquivo CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <!-- Seção de Hero com Banner -->
+    <section class="hero">
+        <div>
+            <img class="logo" src="../assets/logo.png" alt="Banner Closetplux">
+            <h1>Transforme Seu Estilo. Transforme o Mundo.</h1>
+            <p class="hero-p">Aqui, cada peça de roupa é pensada para realçar o seu estilo único e trazer conforto no seu dia a dia.!</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Explore Agora</button>
+        </div>
+    </section>
+
+    <!-- Seção de Categorias -->
+    <section class="categories">
+        <h2>Escolha a Sua Categoria</h2>
+        <div class="category-container">
+
+            <button class="cta-btn-category" onclick="showProducts('homem')">Homem</button>
+
+
+            <button class="cta-btn-category" onclick="showProducts('mulher')">Mulher</button>
+
+
+            <button class="cta-btn-category" onclick="showProducts('crianca')">Criança</button>
+
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products" id="products">
+        <!-- Produtos Masculinos -->
+        <div class="product-category" id="homem">
+            <div class="product-cards">
+
+                <div class="product-card">
+                    <img src="../public/closet.png" alt="closetplux">
+                    <h3>Camiseta Masculina Slim</h3>
+                    <p>Nossas camisetas são desenvolvidas com modelagem slim, confortáveis e estilosas.</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPage()">Ir para loja</button>
+                </div>
+                <div class="product-card">
+                    <img src="../public/clert-homem02.png" alt="Produto Masculino 2">
+                    <h3>Camisa Masculina Gola Padre Henley de Manga Curta</h3>
+                    <p>Perfeita para o seu dia a dia com conforto e elegância.</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPageHome02()">Ir para loja</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos Femininos -->
+        <div class="product-category" id="mulher" style="display:none;">
+            <div class="product-cards">
+
+                <div class="product-card">
+                    <img src="../public/closet-mulher.png" alt="Produto Feminino 1">
+                    <h3>Kit 05 Peças Blusinha Camisa Roupa Feminina Casual Social Elegante em Linho De Algodão Com Babado Na Manga Cores Verão</h3>
+                    <p>Estilo e conforto para todas as ocasiões.</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPage02()">Ir para loja</button>
+                </div>
+                <div class="product-card">
+                    <img src="../public/closet-mulher02.png" alt="Produto Feminino 2">
+                    <h3>Top Tube Cropped Básico Feminino Tomara que Caia Comprido Tubinho Poliamida Duplo Sem Bojo</h3>
+                    <p> Cropped perfeito para looks versáteis e sofisticados.</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPageMulher02()">Ir para loja</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produtos Infantis -->
+        <div class="product-category" id="crianca" style="display:none;">
+            <div class="product-cards">
+
+                <div class="product-card">
+                    <img src="../public/closet-crianca01.png" alt="Produto Criança 1">
+                    <h3>Roupa Infantil Menino Kit 6 Peças Verão 1 ao 14 Conjunto Masculino Criança</h3>
+                    <p>Roupas confortáveis para os pequenos com muito estilo!</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPageCrianca01()">Ir para loja</button>
+                </div>
+                <div class="product-card">
+                    <img src="../public/closet-crianca02.png" alt="Produto Criança 2">
+                    <h3>Kit Sortido 10 Peças de Roupas Infantil Menino 5 Camisetas + 5 Bermudas INVIO IMEDIATO</h3>
+                    <p>Comodidade e diversão em cada peça.</p>
+                    <button class="cta-btn-compra" onclick="redirectToProductPageCrianca02()">Ir para loja</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Em Breve - Novos Produtos Chegando!</h2>
+        <!-- <div class="testimonial">
+            <p>"Este curso me ajudou a transformar minha visão sobre negócios. Super recomendo!"</p>
+            <h4>João Silva</h4>
+        </div>
+        <div class="testimonial">
+            <p>"A mentoria foi transformadora, agora tenho muito mais resultados no meu negócio!"</p>
+            <h4>Maria Oliveira</h4>
+        </div> -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Closetplux. Todos os direitos reservados.</p>
+        <p><a href="./politicas.html">Política de Privacidade</a> | <a href="./termos.html">Termos de Uso</a></p>
+    </footer>
+
+    <!-- Vinculando o arquivo JS -->
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>

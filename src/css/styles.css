@@ -1,0 +1,347 @@
+/* Fonte personalizada "The Seasons" */
+@import url('https://fonts.googleapis.com/css2?family=The+Seasons&display=swap');
+
+body {
+    font-family: 'The Seasons', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.product-cards {
+    display: flex ;
+
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    transition: width 0.3s ease;
+    z-index: 10;
+}
+
+/* Banner */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../public/back.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover; /* Faz com que o fundo ocupe toda a área */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+.cta-btn-category {
+    margin-left: 1rem;
+    color: #000000;
+    font-weight: bolder;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-btn {
+    background-color: white;
+    color: #000000;
+    font-weight: bolder;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 2s forwards;
+}
+
+.cta-btn-compra {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 2s forwards;
+}
+
+.cta-btn:hover {
+    background-color: #d8cfcf;
+}
+
+.cta-btn-compra:hover {
+    background-color: #292727;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção de Produtos */
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Garantia de 7 dias */
+.guarantee {
+    font-size: 0.9rem;
+    color: #28a745;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background: #9262F2;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.testimonials {
+    text-align: center;
+}
+
+/* Media Queries para Responsividade */
+
+/* Dispositivos menores (tablets e celulares) */
+@media (max-width: 1024px) {
+    .product-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+.product-cards {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+    .logo {
+        width: 10rem !important;
+    }
+    /* Banner */
+    .hero {
+        height: 50vh !important;
+        padding: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    /* Produtos */
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Logo */
+    .logo {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 4rem;
+    }
+
+    /* Ajuste da largura dos cards */
+    .product-card {
+        width: 90%; /* Torna os cards mais largos em telas pequenas */
+    }
+}
+
+/* Estilo das categorias */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
