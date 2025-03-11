@@ -206,6 +206,20 @@ footer a {
 
 @media (max-width: 768px) {
 
+.categories {
+    font-size: .7rem;
+    text-align: center;
+}
+
+.category-container {
+    margin: 0 auto;
+}
+
+.cta-btn-category {
+    width: 5rem;
+    font-size: .9rem;
+}
+
 .product-cards {
     display: flex ;
     flex-direction: column;
